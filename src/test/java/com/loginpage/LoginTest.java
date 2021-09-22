@@ -51,6 +51,7 @@ public class LoginTest {
 		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(element));
 		element.click();
 		
+		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		
 	}
 
