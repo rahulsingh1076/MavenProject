@@ -53,6 +53,7 @@ public class LoginTest {
 		
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		
+		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 	}
 
 }
