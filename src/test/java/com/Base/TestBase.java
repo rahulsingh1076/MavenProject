@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -37,6 +38,8 @@ public class TestBase {
 	public static  org.apache.logging.log4j.Logger log = LogManager.getLogger(TestBase.class.getName());
 	
 	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\TestData.xlsx");
+	
+	public static WebDriverWait wait ;
 
 	@BeforeSuite
 	public void setup() {
@@ -93,6 +96,8 @@ public class TestBase {
 		// driver.get("https://www.way2automation.com/angularjs-protractor/banking/#/login");
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		driver.manage().window().maximize();
+		
+		wait = new WebDriverWait(driver , 5);
 
 	}
 
