@@ -1,0 +1,9 @@
+[DEBUG] 2021-09-24 03:55:28.541 [main] TestBase - config properties Loaded
+[INFO ] 2021-09-24 03:55:28.546 [main] TestBase - Logger info 
+[INFO ] 2021-09-24 03:55:28.547 [main] TestBase - info Log
+[DEBUG] 2021-09-24 03:55:28.547 [main] TestBase - Debug Log
+[FATAL] 2021-09-24 03:55:28.547 [main] TestBase - Fatal Log
+[ERROR] 2021-09-24 03:55:28.547 [main] TestBase - Error Log
+[WARN ] 2021-09-24 03:55:28.547 [main] TestBase - Warn Log
+[DEBUG] 2021-09-24 03:55:28.548 [main] TestBase - Object Repo properties Loaded
+[DEBUG] 2021-09-24 03:55:32.330 [main] TestBase - Driver Launched
