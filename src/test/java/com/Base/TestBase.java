@@ -97,7 +97,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		driver.manage().window().maximize();
 		
-		wait = new WebDriverWait(driver , 5);
+		wait = new WebDriverWait(driver , 10);
 
 	}
 

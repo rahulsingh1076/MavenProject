@@ -42,7 +42,8 @@ public class ExcelReader {
 			return 0;
 		else {
 			sheet = workbook.getSheetAt(index);
-			int number = sheet.getLastRowNum();
+			int number = sheet.getLastRowNum() + 1;
+			//System.out.println("NUmber in getRowCount "+ number);
 			return number;
 		}
 
@@ -59,7 +60,7 @@ public class ExcelReader {
 		if (row == null)
 			return -1;
 
-		return row.getLastCellNum();
+		return row.getLastCellNum() ;
 
 	}
 
